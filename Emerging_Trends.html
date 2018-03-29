@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Emerging Trends</title>
+<style>
+
+body {
+	width: 900px;
+}
+
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+</style>
+</head>
+<body>
+
+	<h3>CSS3 Hover:</h3>
+
+	<p>CSS3 hover will allow designers to use CSS to create fun interactive animations for webpages without the need of the developer.</p>
+	<p><a href="http://ianlunn.github.io/Hover/">Github CSS3 Hover</a></p>
+
+<p><img src="grow.jpg" style="width:65%; margin-left:25%;" alt="Grow" class="hvr-grow"/></p>
+
+<p><img src="pulse.jpg" style="width:65%; margin-left:25%;" alt="Pulse" class="hvr-pulse"/></p>
+
+
+	<h3>SVG Scalable Vector Graphics:</h3>
+	<p>You can now use SVG without Javascript.</p>
+
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="red" stroke-width="4" fill="black" />
+</svg>
+
+
+	<h3>Audio Support:</h3>
+
+	<p>No longer do we have to rely upon third party plugins in order to render audio. HTML5 now offers the audio element. Well, at least, ultimately, we won't have to worry about these plugins. For the time being, only the most recent of browsers offer support for HTML5 audio. At this time, it's still a good practice to offer some form of backward compatibility</p>
+        
+	<audio controls="controls">
+            <source src="Alcest.mp3" type="audio/mpeg">
+	</audio>
+
+	<p>Mozilla and Webkit don’t fully get along just yet, when it comes to the audio format. Firefox will want to see an .ogg file, while Webkit browsers will work just fine with the common .mp3 extension. This means that, at least for now, you should create two versions of the audio.
+
+	When Safari loads the page, it won’t recognize that .ogg format, and will skip it and move on to the mp3 version, accordingly. Please note that IE, per usual, doesn’t support this, and Opera 10 and lower can only work with .wav files.</p>
+
+
+
+
+</body>
+</html>

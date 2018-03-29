@@ -1,0 +1,11 @@
+body { font-family: monospace; background-image: url("../imgs/bg.jpg"); color: white; }
+
+#myCarousel { margin-top: 20px; margin-bottom: 20px; }
+
+.panel-body { color: black; }
+
+#sidebarcolor { border-color: aquamarine; }
+
+#bodycolor { background-color: aquamarine; }
+
+/*# sourceMappingURL=style.css.map */

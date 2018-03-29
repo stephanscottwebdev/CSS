@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Practice</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body class="container">
+
+    <div class="page-header">
+        <h1>Boostrap Header Example</h1>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="p1.html">Image Slider</a></li>
+                <li><a href="p2.html">Misc Examples</a></li>
+                <li><a href="p3.html">Form Example</a></li>
+            </ul>
+        </div>
+    </nav>
+
+ 
+    <h2>Animated Alerts</h2>
+    <p>The .fade and .in classes adds a fading effect when closing the alert message.</p>
+    <div class="alert alert-success fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Success!</strong> This alert box could indicate a successful or positive action.
+    </div>
+    <div class="alert alert-info fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+    </div>
+    <div class="alert alert-warning fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+    </div>
+    <div class="alert alert-danger fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+    </div>
+
+    <h2>Animated Progress Bar</h2>
+    <p>The .active class animates the progress bar:</p>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+            75%
+        </div>
+    </div>
+
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Collapsible Group 1</a>
+      </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Collapsible Group 2</a>
+      </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Collapsible Group 3</a>
+      </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+        </div>
+    </div>
+    <!-- <img class="img-responsive" src="imgs/dgj.jpg" id="img" alt="Dave Jesus"> -->
+    <h2>Media Object</h2>
+    <p>Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+    <p>Tip: Use the "media-right" class to right-align the media object.</p>
+    <br>
+
+    <!-- Left-aligned media object -->
+    <div class="media">
+        <div class="media-left">
+            <img src="imgs/luke.png" class="media-object" style="height:60px" "width:60px">
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">Left-aligned</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Right-aligned media object -->
+    <div class="media">
+        <div class="media-body">
+            <h4 class="media-heading">Right-aligned</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="media-right">
+            <img src="imgs/vader.jpg" class="media-object" style="height:60px" "width:60px">
+        </div>
+    </div>
+
+</body>
+
+</html>

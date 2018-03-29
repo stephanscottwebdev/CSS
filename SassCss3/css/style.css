@@ -1,0 +1,51 @@
+body {
+  background: gray;
+  color: white; }
+
+.div1 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-color: black;
+  border-style: solid;
+  -webkit-transition: width 2s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 4s; }
+
+.div1:hover {
+  width: 600px; }
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightblue; } }
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000; }
+
+html {
+  border-width: 3px;
+  border-style: solid;
+  margin: 10px;
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(black), to(transparent)) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(black, transparent) 1 100%;
+  -moz-border-image: -moz-linear-gradient(black, transparent) 1 100%;
+  -o-border-image: -o-linear-gradient(black, transparent) 1 100%;
+  border-image: linear-gradient(to bottom, black, transparent) 1 100%; }
+
+.applyGradient {
+  background: #2f92e9;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#2f92e9, #114573);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#2f92e9, #114573);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#2f92e9, #114573);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#2f92e9, #114573);
+  /* Standard syntax (must be last) */ }
+
+.scssDisplay {
+  color: white;
+  font-size: 24px; }
+
+/*# sourceMappingURL=style.css.map */

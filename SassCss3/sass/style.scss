@@ -1,0 +1,67 @@
+$bg: gray;
+$fc: white;
+body {
+    background: $bg;
+    color: $fc;
+}
+
+.div1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-color: black;
+    border-style: solid;
+    -webkit-transition: width 2s;
+    /* For Safari 3.1 to 6.0 */
+    transition: width 4s;
+}
+
+.div1:hover {
+    width: 600px;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+html {
+    border-width: 3px;
+    border-style: solid;
+    margin: 10px;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+@mixin verticalGradient($topColor, $bottomColor){
+	background: $topColor; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($topColor, $bottomColor); 	/* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($topColor, $bottomColor); 		/* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($topColor, $bottomColor); 		/* For Firefox 3.6 to 15 */
+    background: linear-gradient($topColor, $bottomColor); 			/* Standard syntax (must be last) */
+}
+
+$primaryColor: #2f92e9;
+
+$secondaryColor: #114573;
+
+.applyGradient { @include verticalGradient($primaryColor, $secondaryColor) }
+
+.scssDisplay	{
+	color:white;
+	font-size:24px;	
+}

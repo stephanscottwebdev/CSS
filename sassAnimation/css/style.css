@@ -1,0 +1,17 @@
+.box-1, .box-2 { height: 200px; width: 200px; margin: 50px; }
+
+.box-1 { background-color: blue; -webkit-animation: slide-1 2s ease infinite; animation: slide-1 2s ease infinite; }
+
+.box-2 { background-color: red; -webkit-animation: slide-2 2s ease infinite; animation: slide-2 2s ease infinite; }
+
+@-webkit-keyframes slide-1 { 0% { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); opacity: 0; }
+  100% { -webkit-transform: translate3d(100%, 0, 0); transform: translate3d(100%, 0, 0); opacity: 1; } }
+
+@keyframes slide-1 { 0% { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); opacity: 0; }
+  100% { -webkit-transform: translate3d(100%, 0, 0); transform: translate3d(100%, 0, 0); opacity: 1; } }
+@-webkit-keyframes slide-2 { 0% { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); opacity: 0; }
+  100% { -webkit-transform: translate3d(200%, 0, 0); transform: translate3d(200%, 0, 0); opacity: 1; } }
+@keyframes slide-2 { 0% { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); opacity: 0; }
+  100% { -webkit-transform: translate3d(200%, 0, 0); transform: translate3d(200%, 0, 0); opacity: 1; } }
+
+/*# sourceMappingURL=style.css.map */
